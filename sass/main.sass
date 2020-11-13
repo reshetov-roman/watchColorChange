@@ -1,0 +1,151 @@
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+
+
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #fff
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+
+.site-wrap
+	overflow: hidden
+
+
+.watch
+	&-wrapper
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		height: 100vh
+		img
+			position: absolute
+			left: 40%
+			top: 50%
+			transform: translate(-50%, -50%)
+			max-width: 350px
+		&__nav
+			display: flex
+			align-items: center
+			flex-direction: column
+			border-radius: 3px
+			padding: 10px
+			background: #fff
+			span
+				position: relative
+				width: 20px
+				cursor: pointer
+				height: 20px
+				margin: 10px 5px
+				background: #f00
+				border-radius: 50%
+				z-index: 3
+			span.active
+				border: 1px solid #000
+				transform: scale(1.2)
+			span.one,
+			i.one
+				background: #20c544
+			span.two,
+			i.two
+				background: #FF216E
+			span.three,
+			i.three
+				background: #7c24c4
+			span.four,
+			i.four
+				background: #2295F5
+			span.active + i
+				mix-blend-mode: hue
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				z-index: 1
+				
+		
+@media only screen and (max-width:620px)
+	.watch-wrapper > img
+		max-width: 300px
+
+@media only screen and (max-width:528px)
+	.watch-wrapper > img
+		max-width: 250px
+		left: 40%
+
+@media only screen and (max-width:350px)
+	.watch-wrapper > img
+		max-width: 220px
+		left: 40%
+
+
+		
+
+
+@import "_media"
